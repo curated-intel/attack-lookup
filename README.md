@@ -13,7 +13,7 @@ $ pip install attack-lookup
 It can also be installed manually:
 
 ```
-$ git clone $REPO
+$ git clone https://github.com/curated-intel/attack-lookup.git
 $ cd attack-lookup
 $ python setup.py install --user
 ```
@@ -41,7 +41,7 @@ optional arguments:
                         Mode for output file ("result" only has the lookup results, "csv" outputs a CSV with the lookup and result values (default: results)
 ```
 
-By default, `attack-lookup` uses the latest version of the Enterprise matrix. When running in Online mode, `attack-lookup` pulls the latest matrix from MITRE's GitHub [repo](https://github.com/mitre/cti). When running in Offline mode, it can use any matrix available in [attack_lookup/data](attack_lookup/data).
+By default, `attack-lookup` uses the latest version of the Enterprise matrix. When running in Online mode, `attack-lookup` pulls the latest matrix from MITRE's GitHub [repo](https://github.com/mitre/cti). When running in Offline mode, it can use any matrix available in `attack_lookup/data`.
 
 You can use `attack-lookup` in interactive or batch mode:
 
