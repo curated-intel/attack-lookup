@@ -1,5 +1,7 @@
 # MITRE ATT&CK Lookup Tool
 
+[![PyPi license](https://badgen.net/pypi/license/attack-lookup/)](https://pypi.com/project/attack-lookup/) [![PyPi version](https://badgen.net/pypi/v/attack-lookup/)](https://pypi.com/project/attack-lookup/)
+
 `attack-lookup` is a tool that lets you easily check what Tactic, Technique, or Sub-technique ID maps to what name, and vice versa. It can be used interactively, for batch processing, or in your own tooling. 
 
 ## Installation
