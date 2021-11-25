@@ -49,7 +49,7 @@ You can use `attack-lookup` in interactive or batch mode:
 
 ```
 $ attack-lookup
-(loading matrix...done)
+(loading latest enterprise matrix...done)
 Running attack-lookup in interactive mode, exit with (q)uit
 ATT&CK> T1539
 Steal Web Session Cookie
