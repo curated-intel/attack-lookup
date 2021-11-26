@@ -17,7 +17,7 @@ def parse_args():
     return args.parse_args()
 
 def do_interactive(mapping: AttackMapping):
-    print("Running attack-lookup in interactive mode, exit with (q)uit")
+    print("Running attack-lookup in interactive mode, exit with (q)uit. Enter one or more values to lookup, separated by a comma.")
 
     while True:
         # get input

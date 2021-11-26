@@ -6,7 +6,7 @@
 
 ## Installation
 
-`attack-lookup` can be installed from PyPi:
+`attack-lookup` can be installed from PyPI:
 
 ```
 $ pip install attack-lookup
@@ -50,7 +50,7 @@ You can use `attack-lookup` in interactive or batch mode:
 ```
 $ attack-lookup
 (loading latest enterprise matrix...done)
-Running attack-lookup in interactive mode, exit with (q)uit
+Running attack-lookup in interactive mode, exit with (q)uit. Enter one or more values to lookup, separated by a comma.
 ATT&CK> T1539
 Steal Web Session Cookie
 ATT&CK>
