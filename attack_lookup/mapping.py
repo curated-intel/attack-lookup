@@ -99,17 +99,17 @@ class AttackMapping:
 
         # check if the src val we have is an ID
         # they can be TA####, T####, or T####.###
-        id_re = re.compile(r"^TA?[0-9]{4}(\.[0-9]{3})?$")
+        id_re = re.compile(r"^TA?[0-9]{4}(\.[0-9]{3})?$", re.IGNORECASE)
         if id_re.match(src_val):
             # we have an ID, get the value from the map
             try:
-                val = self.mapping[src_val]
+                val = [value for key, value in self.mapping.items() if key.lower() == src_val.lower()]
             except KeyError:
                 pass
         else:
             # we have a name, get the ID
             # https://www.kite.com/python/answers/how-to-do-a-reverse-dictionary-lookup-in-python
-            lookup_dict = [key for key, value in self.mapping.items() if value == src_val]
+            lookup_dict = [key for key, value in self.mapping.items() if value.lower() == src_val.lower()]
             if len(lookup_dict) == 1:
                 val = lookup_dict[0]
             elif len(lookup_dict) > 1:
