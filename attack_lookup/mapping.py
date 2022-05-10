@@ -103,8 +103,8 @@ class AttackMapping:
         if id_re.match(src_val):
             # we have an ID, get the value from the map
             try:
-                val = [value for key, value in self.mapping.items() if key.lower() == src_val.lower()]
-            except KeyError:
+                val = [value for key, value in self.mapping.items() if key.lower() == src_val.lower()][0]
+            except (KeyError, IndexError):
                 pass
         else:
             # we have a name, get the ID
