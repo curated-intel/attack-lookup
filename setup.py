@@ -14,7 +14,7 @@ with open(base_dir / "README.md", "r") as f:
 
 setup(
     name="attack-lookup",
-    version="1.0.2",
+    version="1.0.3",
     description="MITRE ATT&CK Lookup Tool",
     long_description=readme,
     long_description_content_type="text/markdown",

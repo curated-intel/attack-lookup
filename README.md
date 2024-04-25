@@ -50,7 +50,7 @@ MITRE ATT&CK Lookup Tool
 optional arguments:
   -h, --help            show this help message and exit
   -v VERSION, --version VERSION
-                        ATT&CK matrix version to use (default: v10.1)
+                        ATT&CK matrix version to use (default: v15)
   -m {enterprise,ics,mobile}, --matrix {enterprise,ics,mobile}
                         ATT&CK matrix to use (default: enterprise)
   -O, --offline         Run in offline mode (default: False)
@@ -108,7 +108,7 @@ You can also use `attack-lookup` in your own scripts.
 from attack_lookup import AttackMapping
 
 # version is ignored when running online FYSA
-mapping = AttackMapping(matrix="enterprise", version="v10.1", offline=False)
+mapping = AttackMapping(matrix="enterprise", version="v15", offline=False)
 
 # load the data
 # this can take ~10sec
