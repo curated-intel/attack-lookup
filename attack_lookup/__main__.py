@@ -6,7 +6,7 @@ from .mapping import AttackMapping
 
 def parse_args():
     args = argparse.ArgumentParser(prog="attack-lookup", description="MITRE ATT&CK Lookup Tool", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    args.add_argument("-v", "--version", default="v10.1", help="ATT&CK matrix version to use")
+    args.add_argument("-v", "--version", default="v15", help="ATT&CK matrix version to use")
     args.add_argument("-m", "--matrix", choices=["enterprise", "ics", "mobile"], default="enterprise", help="ATT&CK matrix to use")
     args.add_argument("-O", "--offline", action="store_true", help="Run in offline mode")
 

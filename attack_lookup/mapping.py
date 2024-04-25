@@ -11,7 +11,7 @@ from stix2.datastore.filters import Filter
 class AttackMapping:
     valid_matrices = ["enterprise", "ics", "mobile"]
 
-    def __init__(self, matrix: str = "enterprise", version: str = "v10.1", offline: bool = False):
+    def __init__(self, matrix: str = "enterprise", version: str = "v15", offline: bool = False):
         if matrix not in AttackMapping.valid_matrices:
             raise ValueError(f"Invalid matrix specified. Valid matrices are: [{', '.join(AttackMapping.valid_matrices)}]")
 
